@@ -11,9 +11,12 @@ export default function NavBar() {
   return (
     <header>
       {/* Navigation */}
-      <nav className="p-4">
+      <nav className={`p-4 ${backgroundColor}`}>
         <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold text-slate-800">sm.</div>
+          <Link to="/">
+            <span className="sr-only">Sofi</span>
+            <img alt="" src={logo} className="h-10 w-auto" />
+          </Link>
           <div className="space-x-8">
             <a href="#projects" className="text-slate-700 hover:text-slate-900">
               Projects
