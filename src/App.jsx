@@ -5,8 +5,8 @@ import { Routes, Route } from "react-router";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
-import NavBar from "./componentes/NavBar";
-import Footer from "./componentes/Footer";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
