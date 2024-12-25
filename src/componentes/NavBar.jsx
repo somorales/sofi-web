@@ -12,12 +12,12 @@ export default function NavBar() {
     <header>
       {/* Navigation */}
       <nav className={`p-4 ${backgroundColor}`}>
-        <div className="max-w-6xl mx-auto flex justify-between items-center">
+        <div className="max-w-6xl mx-auto flex justify-between items-center py-[2.125rem]">
           <Link to="/">
             <span className="sr-only">Sofi</span>
-            <img alt="" src={logo} className="h-10 w-auto" />
+            <img alt="" src={logo} className="h-11 w-auto" />
           </Link>
-          <div className="space-x-8">
+          <div className="space-x-8 text-xl">
             <a href="#projects" className="text-slate-700 hover:text-slate-900">
               Projects
             </a>
