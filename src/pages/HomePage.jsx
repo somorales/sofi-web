@@ -1,18 +1,8 @@
 import React from "react";
-import { useEffect, useContext } from "react";
-import { NavContext } from "../context/nav.context";
 import RecentProjects from "../components/RecentProjects";
 import ExploreProjects from "../components/ExploreProjects";
 
 export default function HomePage() {
-  const { setBackgroundColor, setTextColor, setLogo, setBorderColor } =
-    useContext(NavContext);
-
-  useEffect(() => {
-    setBackgroundColor("bg-[#C7D9A6]");
-    setTextColor("text-white");
-    setBorderColor("border-white");
-  });
 
   return (
     <div className="flex flex-col">

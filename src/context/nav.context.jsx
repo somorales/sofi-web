@@ -4,7 +4,7 @@ import logoSM from "../assets/imagenes/sm.png"
 const NavContext = createContext();
 
 function NavWrapper(props) {
-  const [backgroundColor, setBackgroundColor] = useState("bg-[#392F5A]");
+  const [backgroundColor, setBackgroundColor] = useState("bg-[#C7D9A6]");
   const [textColor, setTextColor] = useState("text-white");
   const [logo, setLogo] = useState(logoSM);
   const [borderColor, setBorderColor] = useState("border-white");

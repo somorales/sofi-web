@@ -18,17 +18,14 @@ export default function NavBar() {
             <img alt="" src={logo} className="h-11 w-auto" />
           </Link>
           <div className="space-x-8 text-xl">
-            <a href="#projects" className="text-slate-700 hover:text-slate-900">
+            <a href="/about" className="text-slate-700 hover:text-slate-900">
+              About me
+            </a>
+            <a href="/projects" className="text-slate-700 hover:text-slate-900">
               Projects
             </a>
-            <a
-              href="#experience"
-              className="text-slate-700 hover:text-slate-900"
-            >
-              Experience
-            </a>
             <a href="#contact" className="text-slate-700 hover:text-slate-900">
-              Contact
+              In
             </a>
           </div>
         </div>
