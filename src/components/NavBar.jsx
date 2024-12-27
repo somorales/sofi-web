@@ -1,8 +1,12 @@
 import React from "react";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import { NavContext } from "../context/nav.context";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+
+library.add(faLinkedinIn);
 
 export default function NavBar() {
   const { backgroundColor, textColor, logo, borderColor } =
@@ -24,8 +28,12 @@ export default function NavBar() {
             <a href="/projects" className="text-slate-700 hover:text-slate-900">
               Projects
             </a>
-            <a href="#contact" className="text-slate-700 hover:text-slate-900">
-              In
+            <a href="https://www.linkedin.com/in/sofimorales/" target="_blank">
+              <FontAwesomeIcon
+                className="text-slate-700"
+                icon="fa-brands fa-linkedin-in"
+                size="lg"
+              />
             </a>
           </div>
         </div>
