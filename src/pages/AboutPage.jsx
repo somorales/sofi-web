@@ -47,7 +47,7 @@ export default function AboutPage() {
     {
       school: "Ironhack",
       period: "Aug 2024 - Nov 2024",
-      degree: "",
+      degree: "Full-stack JavaScript Web Development",
       description:
         "Intense and immersive bootcamp where we master the technical and project-management skills needed for a successful career in tech, learning how to develop great products in teams using modern workflows. Technologies learnt include: JavaScript(ES6), HTML, CSS, React, Git, GitHub, Node.js, Mongodb, Express.js.",
     },
