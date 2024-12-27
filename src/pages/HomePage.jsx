@@ -23,7 +23,7 @@ export default function HomePage() {
               <a
                 href="#"
                 target="_blank"
-                className="bg-[#1a2e35] rounded-3xl transition-colors hover:bg-[#C7D9A6] hover:border hover:border-[#1a2e35]  hover:text-[#1a2e35] px-3.5 py-2.5 shadow-sm w-60 font-bold text-white text-center"
+                className="bg-[#1a2e35] rounded-3xl transition-colors border hover:bg-[#C7D9A6] hover:border-[#1a2e35]  hover:text-[#1a2e35] px-3.5 py-2.5 shadow-sm w-60 font-bold text-white text-center"
               >
                 Download CV
               </a>
