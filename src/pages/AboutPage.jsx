@@ -1,6 +1,6 @@
 import React from "react";
-import sofiAbout from "../assets/imagenes/sofi-about.png";
-import sofiPic from "../assets/imagenes/sofi-pic.png";
+import sofiAbout from "../assets/images/sofi-about.png";
+import sofiPic from "../assets/images/sofi-pic.png";
 
 export default function AboutPage() {
   const skills = [

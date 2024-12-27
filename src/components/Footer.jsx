@@ -1,9 +1,9 @@
 import React from "react";
-import logoFooter from "../assets/imagenes/logo-footer.png";
+import logoFooter from "../assets/images/logo-footer.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faGithub, faLinkedin, faEnvelope);
 
@@ -24,14 +24,23 @@ export default function Footer() {
       </h3>
       <div className="flex gap-5 items-center">
         <a href="mailto:sofimoralesroa92@gmail.com" target="_blank">
-          <FontAwesomeIcon className="h-[42px] text-[#F9F5E3]" icon="fa-solid fa-envelope" />
+          <FontAwesomeIcon
+            className="h-[42px] text-[#F9F5E3]"
+            icon="fa-solid fa-envelope"
+          />
         </a>
-        
+
         <a href="https://www.linkedin.com/in/sofimorales/" target="_blank">
-          <FontAwesomeIcon className="h-[40px] text-[#F9F5E3]" icon="fa-brands fa-linkedin" />
+          <FontAwesomeIcon
+            className="h-[40px] text-[#F9F5E3]"
+            icon="fa-brands fa-linkedin"
+          />
         </a>
         <a href="https://github.com/somorales" target="_blank">
-          <FontAwesomeIcon className="h-[40px] text-[#F9F5E3]" icon="fa-brands fa-github" />
+          <FontAwesomeIcon
+            className="h-[40px] text-[#F9F5E3]"
+            icon="fa-brands fa-github"
+          />
         </a>
       </div>
     </footer>

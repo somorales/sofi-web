@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import logoSM from "../assets/imagenes/sm.png"
+import logoSM from "../assets/images/sm.png";
 
 const NavContext = createContext();
 
@@ -17,7 +17,7 @@ function NavWrapper(props) {
     logo,
     setLogo,
     borderColor,
-    setBorderColor
+    setBorderColor,
   };
 
   return (
