@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { NavContext } from "../context/nav.context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -11,6 +11,11 @@ library.add(faLinkedinIn);
 export default function NavBar() {
   const { backgroundColor, textColor, logo, borderColor } =
     useContext(NavContext);
+  const location = useLocation();
+
+  const getStyleIfOnPage = (page) => {
+    return location.pathname == page ? "font-bold" : "";
+  };
 
   return (
     <header>
@@ -21,16 +26,26 @@ export default function NavBar() {
             <span className="sr-only">Sofi</span>
             <img alt="" src={logo} className="h-11 w-auto" />
           </Link>
-          <div className="space-x-8 text-xl">
-            <a href="/about" className="text-slate-700 hover:text-slate-900">
+          <div className="flex flex-row justify-between gap-8 text-xl">
+            <a
+              href="/about"
+              className={`${getStyleIfOnPage(
+                "/about"
+              )} text-slate-700 hover:text-slate-900 hover:font-bold`}
+            >
               About me
             </a>
-            <a href="/projects" className="text-slate-700 hover:text-slate-900">
+            <a
+              href="/projects"
+              className={`${getStyleIfOnPage(
+                "/projects"
+              )} text-slate-700 hover:text-slate-900 hover:font-bold`}
+            >
               Projects
             </a>
             <a href="https://www.linkedin.com/in/sofimorales/" target="_blank">
               <FontAwesomeIcon
-                className="text-slate-700"
+                className="text-slate-600 hover:text-slate-900 hover:font-bold"
                 icon="fa-brands fa-linkedin-in"
                 size="lg"
               />
