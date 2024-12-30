@@ -5,6 +5,7 @@ import { NavContext } from "../context/nav.context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { HashLink } from "react-router-hash-link";
 
 library.add(faLinkedinIn);
 
@@ -27,29 +28,30 @@ export default function NavBar() {
             <img alt="" src={logo} className="h-11 w-auto" />
           </Link>
           <div className="flex flex-row justify-between gap-8 text-xl">
-            <a
-              href="/about"
+            <Link
+              to="/about"
               className={`${getStyleIfOnPage(
                 "/about"
               )} text-slate-700 hover:text-slate-900 hover:font-bold`}
             >
               About me
-            </a>
-            <a
-              href="/projects"
+            </Link>
+            <HashLink
+              smooth
+              to="/#projects"
               className={`${getStyleIfOnPage(
-                "/projects"
+                "/#projects"
               )} text-slate-700 hover:text-slate-900 hover:font-bold`}
             >
               Projects
-            </a>
-            <a href="https://www.linkedin.com/in/sofimorales/" target="_blank">
+            </HashLink>
+            <Link to="https://www.linkedin.com/in/sofimorales/" target="_blank">
               <FontAwesomeIcon
                 className="text-slate-600 hover:text-slate-900 hover:font-bold"
                 icon="fa-brands fa-linkedin-in"
                 size="lg"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
