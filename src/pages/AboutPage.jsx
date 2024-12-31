@@ -112,7 +112,7 @@ export default function AboutPage() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <div className="bg-[#C7D9A6] min-h-[85vh]">
-        <div className="max-w-6xl mx-auto flex flex-col items-center gap-20 relative">
+        <div className="max-w-6xl mx-auto flex flex-col items-center gap-20 relative min-h-[800px]">
           <img
             src={sofiAbout}
             className="h-[150px] mt-40"
