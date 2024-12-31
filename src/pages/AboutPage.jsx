@@ -232,7 +232,7 @@ export default function AboutPage() {
         {/* Resume Button */}
         <div className="my-10 flex flex-col justify-center gap-2">
           <a
-            href="#"
+            href="/sofia-cv.pdf"
             target="_blank"
             className="bg-[#1a2e35] rounded-3xl transition-colors border hover:bg-[#C7D9A6] hover:border-[#1a2e35]  hover:text-[#1a2e35] px-3.5 py-2.5 shadow-sm w-60 text-white text-center"
           >
