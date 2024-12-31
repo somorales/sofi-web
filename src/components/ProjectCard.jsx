@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function ProjectCard({ image, title, description, link }) {
+export default function ProjectCard({ image, title, description, link, wip }) {
   return (
     <div className="bg-white rounded-lg p-6 mb-6 flex flex-col md:flex-row gap-12 items-center border border-opacity-40 border-[#2B2B2B]">
       <div className="w-full md:w-1/3 p-6">
@@ -21,7 +21,7 @@ export default function ProjectCard({ image, title, description, link }) {
             to={link}
             className="flex justify-center w-full rounded-3xl  bg-[#48376C] text-white py-3 px-6 hover:bg-[#C7BDDD] hover:text-[#48376C] transition-colors"
           >
-            View project
+            {wip ? "Coming soon" : "View project"}
           </Link>
         </div>
       </div>

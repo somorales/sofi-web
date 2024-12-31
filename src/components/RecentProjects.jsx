@@ -15,19 +15,20 @@ export default function RecentProjects() {
       link: "/projects/muqui",
     },
     {
-      image: coverProgif ,
+      image: coverProgif,
       title: "How to make it easier to find the ideal gift?",
       description:
         "ProGift effectively and meaningfully connects gifts with personal interests, transforming the art of gift-giving into a thoughtful, personalized experience.",
       link: "#",
+      wip: true,
     },
     {
-      image:  coverAo,
-      title:
-        "AO product management portal",
+      image: coverAo,
+      title: "AO product management portal",
       description:
         "Inventory management for the Paraguayan store AO. Admin users can manage products. Users can search for products and favorite them.",
       link: "#",
+      wip: true,
     },
   ];
   return (
