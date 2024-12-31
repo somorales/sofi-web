@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
+import { NavContext } from "../context/nav.context";
 import sofiAbout from "../assets/images/sofi-about.png";
 import sofiPic from "../assets/images/sofi-pic.png";
 
 export default function AboutPage() {
+  const { setBackgroundColor } = useContext(NavContext);
+
+  useEffect(() => {
+    setBackgroundColor("bg-[#C7D9A6]");
+  });
   const skills = [
     {
       category: "Design",

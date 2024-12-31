@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
+import { NavContext } from "../context/nav.context";
 
 export default function ContactPage() {
+  const { setBackgroundColor } = useContext(NavContext);
 
-  return (
-    <div>Contact page</div>
-  );
+  useEffect(() => {
+    setBackgroundColor("bg-[#C7D9A6]");
+  });
+  return <div>Contact page</div>;
 }
