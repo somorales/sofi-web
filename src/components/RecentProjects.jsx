@@ -9,12 +9,14 @@ export default function RecentProjects() {
         "How can we help university students to have better collaborative work?",
       description:
         "Lorem ipsum dolor sit amet consectetur. Pharetra porttitor sapien eget magna arcu egestas pretium vitae in.",
+      link: "/projects/muqui",
     },
     {
       image: "https://placehold.co/400x400?text=Image",
       title: "How to make it easier to find the ideal gift?",
       description:
         "Lorem ipsum dolor sit amet consectetur. Pharetra porttitor sapien eget magna arcu egestas pretium vitae in.",
+      link: "#",
     },
     {
       image: "https://placehold.co/400x400?text=Image",
@@ -22,6 +24,7 @@ export default function RecentProjects() {
         "How can we help university students to have better collaborative work?",
       description:
         "Lorem ipsum dolor sit amet consectetur. Pharetra porttitor sapien eget magna arcu egestas pretium vitae in.",
+      link: "#",
     },
   ];
   return (
