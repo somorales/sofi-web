@@ -4,8 +4,14 @@ import { Link } from "react-router-dom";
 export default function ProjectCard({ image, title, description, link }) {
   return (
     <div className="bg-white rounded-lg p-6 mb-6 flex flex-col md:flex-row gap-12 items-center border border-opacity-40 border-[#2B2B2B]">
-      <div className="w-full md:w-1/3">
-        <img src={image} alt={title} className="rounded-lg w-[400px] h-auto" />
+      <div className="w-full md:w-1/3 p-6">
+        <div className="relative w-full pb-[100%]">
+          <img
+            src={image}
+            alt={title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
       </div>
       <div className="w-full md:w-2/3">
         <div className="md:w-4/5 space-y-6">
