@@ -5,6 +5,7 @@ import muquiStart from "../assets/images/muqui-start.png";
 import muquiOnboarding from "../assets/images/muqui-onboarding.png";
 import muquiLogo from "../assets/images/muqui-logo.png";
 import obsImage from "../assets/images/obs.png";
+import userPersona from "../assets/images/user-persona.png";
 
 export default function MuquiProjectPage() {
   const { setBackgroundColor } = useContext(NavContext);
@@ -140,6 +141,58 @@ export default function MuquiProjectPage() {
             others. This change allowed us to much better understand the context
             and needs of the students we were seeking to help.
           </p>
+        </CenteredContainer>
+      </div>
+
+      <div className="bg-white py-20">
+        <CenteredContainer>
+          <section className="mb-16">
+            <h2 className="text-3xl font-semibold text-[#48376C] mb-6">
+              Final Insights
+            </h2>
+            <p className="text-gray-800 leading-relaxed mb-4">
+              {/* Translation of the first paragraph */}
+              When working in teams, students face high levels of{" "}
+              <span className="text-[#48376C] font-semibold">
+                stress and anxiety
+              </span>
+              . Students have
+              <span className="text-[#48376C] font-semibold">
+                {" "}
+                difficulties managing their collaborative activities, handling
+                their delivery times, and creating a sense of collective
+                responsibility
+              </span>
+              . Students want to achieve quality work, collaborate efficiently
+              and reduce their stress.
+            </p>
+          </section>
+
+          <section className="mb-16">
+            <h2 className="text-4xl font-semibold text-[#48376C] mb-8">
+              The problem
+            </h2>
+            <div className="bg-[#EECFFF] rounded-xl p-8 text-center">
+              <h3 className="text-2xl text-[#48376C] leading-relaxed font-semibold">
+                How can we help university students to have better collaborative
+                work?
+              </h3>
+            </div>
+          </section>
+
+          <section className="mb-16">
+            <h2 className="text-3xl font-semibold text-[#48376C] mb-6">
+              Our User
+            </h2>
+            <p className="text-gray-800 leading-relaxed">
+              Before starting to ideate our solution we created{" "}
+              <span className="text-[#48376C] font-semibold">Jose Maria</span>{" "}
+              to understand how our audience sees themselves, empathizing with
+              their context, problems, needs and motivations.
+            </p>
+          </section>
+
+          <img src={userPersona} alt="" />
         </CenteredContainer>
       </div>
     </div>
