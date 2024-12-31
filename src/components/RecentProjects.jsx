@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import coverMuqui from "../assets/images/muqui-high-fidelity.png";
 import coverProgif from "../assets/images/progif.png";
+import coverAo from "../assets/images/cover-AO.png";
 
 export default function RecentProjects() {
   const projects = [
@@ -21,11 +22,11 @@ export default function RecentProjects() {
       link: "#",
     },
     {
-      image: "https://placehold.co/400x400?text=Image",
+      image:  coverAo,
       title:
-        "How can we help university students to have better collaborative work?",
+        "AO product management portal",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Pharetra porttitor sapien eget magna arcu egestas pretium vitae in.",
+        "Inventory management for the Paraguayan store AO. Admin users can manage products. Users can search for products and favorite them.",
       link: "#",
     },
   ];
