@@ -58,7 +58,7 @@ export default function MuquiProjectPage() {
     <div className="flex flex-col">
       <div className="bg-[#ECC5FC] min-h-[85vh]">
         <CenteredContainer>
-          <div className="md:grid md:grid-cols-5 md:items-center md:gap-16">
+          <div className="md:grid md:grid-cols-5 md:items-center md:gap-14">
             <div className="md:col-span-3">
               <h1 className="text-4xl font-bold text-[#48376C] leading-snug pb-40">
                 Revolutionizing University <br />
@@ -77,7 +77,7 @@ export default function MuquiProjectPage() {
                   Scope
                 </h2>
                 <p className="text-lg text-black pt-1">
-                  User Research ✧ UX Design ✧ UI Design ✧Design thinking
+                  User Research ✧ UX Design ✧ UI Design ✧ Design thinking
                 </p>
               </div>
 
