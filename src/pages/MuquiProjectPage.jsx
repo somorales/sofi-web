@@ -351,7 +351,7 @@ export default function MuquiProjectPage() {
           </div>
 
           <div className="absolute inset-0 flex items-center justify-start py-16 px-28">
-            <h1 className="text-6xl font-bold text-purple-900">Prototype</h1>
+            <h1 className="text-6xl font-bold text-[#48376C]">Prototype</h1>
           </div>
         </CenteredContainer>
       </div>
@@ -451,6 +451,58 @@ export default function MuquiProjectPage() {
             <img src={muquiResult2Image} alt="Muqui Results" />
             <img src={muquiResult3Image} alt="Muqui Results" />
           </section>
+        </CenteredContainer>
+      </div>
+
+      <div className="relative bg-[#EECFFF]">
+        <CenteredContainer className="md:h-[940px]">
+          <div className="absolute inset-0 flex items-center justify-center opacity-40">
+            <img
+              src={muquiWatermarkImage}
+              className="md:h-96"
+              alt="Muqui logo"
+            />
+          </div>
+
+          <div className="absolute inset-0 flex items-center justify-center py-16 px-28">
+            <p className="text-3xl font-semibold text-[#48376C]">
+              This was a student project for the Master in User Experience and
+              Interface Design from Escola Superior de Disseny ESDi. All members
+              contributed equally to all parts of the project.
+            </p>
+          </div>
+          <div className="absolute inset-0 flex items-center justify-start py-16 px-28 top-44">
+            <p className="text-xl text-[#48376C]">
+              <a href="https://es.linkedin.com/in/kamilauchino" target="_blank">
+                Kamila Uchino
+              </a>
+              <span className="px-4">✧</span>
+              <a
+                href="https://mx.linkedin.com/in/katia-palacio"
+                target="_blank"
+              >
+                Katia Palacio
+              </a>
+              <span className="px-4">✧</span>
+              <a
+                href="https://www.linkedin.com/in/andrea-cabrera-07127b71"
+                target="_blank"
+              >
+                Andrea Cabrera
+              </a>
+              <span className="px-4">✧</span>
+              Sofia Morales
+            </p>
+          </div>
+          <div className="absolute inset-x-0 bottom-0 flex items-center justify-center py-16 px-28">
+            <a
+              href="https://www.figma.com/proto/dGEF3AN5bjsPHDwDQPdtGz/Muqui---Espacio-de-trabajo?page-id=2078%3A73534&node-id=2103-100667&p=f&viewport=-1102%2C-1378%2C0.09&t=GO7yZ2BkeGgYQzoP-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2103%3A100535&show-proto-sidebar=1"
+              target="_blank"
+              className="bg-[#48376C] text-white text-sm font-medium rounded-3xl py-3 px-32 border border-[#48376C] hover:bg-[#EECFFF] hover:text-[#48376C] text-center"
+            >
+              View prototype
+            </a>
+          </div>
         </CenteredContainer>
       </div>
     </div>
