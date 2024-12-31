@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, useState, useRef } from "react";
 import { NavContext } from "../context/nav.context";
 import CenteredContainer from "../components/CenteredContainer";
 import muquiStart from "../assets/images/muqui-start.png";
@@ -6,12 +6,43 @@ import muquiOnboarding from "../assets/images/muqui-onboarding.png";
 import muquiLogo from "../assets/images/muqui-logo.png";
 import obsImage from "../assets/images/obs.png";
 import userPersona from "../assets/images/user-persona.png";
+import divergenceImage from "../assets/images/divergence.png";
+import convergenceImage from "../assets/images/convergence.png";
 
 export default function MuquiProjectPage() {
   const { setBackgroundColor } = useContext(NavContext);
+  const [isConverged, setIsConverged] = useState(false);
+  const containerRef = useRef(null);
 
   useEffect(() => {
     setBackgroundColor("bg-[#ECC5FC]");
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Trigger when element is 100% visible
+        if (entry.isIntersecting) {
+          setIsConverged(true);
+        } else {
+          setIsConverged(false);
+        }
+      },
+      {
+        root: null, // use viewport as root
+        threshold: 1, // trigger at 100% visibility
+        rootMargin: "0px",
+      }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    // Cleanup observer on component unmount
+    return () => {
+      if (containerRef.current) {
+        observer.unobserve(containerRef.current);
+      }
+    };
   });
 
   return (
@@ -192,7 +223,38 @@ export default function MuquiProjectPage() {
             </p>
           </section>
 
-          <img src={userPersona} alt="" />
+          <img src={userPersona} />
+        </CenteredContainer>
+      </div>
+
+      <div className="bg-[#F4F2F7] py-20">
+        <CenteredContainer>
+          <section className="mb-16">
+            <h2 className="text-3xl font-semibold text-[#48376C] mb-6">
+              Ideation
+            </h2>
+            <div className="relative md:h-[800px]" ref={containerRef}>
+              <div
+                className={`
+                absolute inset-0
+                transition-all duration-1000 ease-in-out
+                ${isConverged ? "scale-0 opacity-0" : "scale-100 opacity-100"}
+                transform origin-center
+              `}
+              >
+                <img src={divergenceImage} alt="divergence image" />
+              </div>
+              <div
+                className={`
+                absolute inset-0
+                transition-all duration-1000
+                ${isConverged ? "scale-100 opacity-100" : "scale-0 opacity-0"}
+              `}
+              >
+                <img src={convergenceImage} alt="convergence image" />
+              </div>
+            </div>
+          </section>
         </CenteredContainer>
       </div>
     </div>
