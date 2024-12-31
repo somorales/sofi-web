@@ -13,7 +13,7 @@ export default function ExploreProjectCard({
         <img
           src={image}
           alt={title}
-          className="rounded-lg w-auto h-auto object-fit"
+          className="rounded-lg w-full h-full object-cover"
         />
       </div>
       <h3 className="text-base font-semibold mb-2">{title}</h3>
