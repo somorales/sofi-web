@@ -1,13 +1,13 @@
 import React from "react";
 
-export default function ExploreProjectCard({ image, title, description, tags }) {
+export default function ExploreProjectCard({ image, title, description, tags, link }) {
   return (
     <div className="bg-white shadow-md rounded-lg p-6 flex flex-col">
       <div className="bg-gray-200 w-[300px] h-[250px] rounded-lg mb-4">
-        <img src={image} alt={title} className="rounded-lg w-auto h-auto" />
+        <img src={image} alt={title} className="rounded-lg w-auto h-auto object-fit" />
       </div>
       <h3 className="text-base font-semibold mb-2">{title}</h3>
-      <p className="text-sm text-gray-600 mb-4">{description}</p>
+      <p className="text-sm text-gray-600 mb-4 min-h-[80px]">{description}</p>
       <div className="flex flex-wrap gap-2 mb-4">
         {tags.map((tag, index) => (
           <span
@@ -18,9 +18,9 @@ export default function ExploreProjectCard({ image, title, description, tags }) 
           </span>
         ))}
       </div>
-      <button className="bg-[#48376C] text-white text-sm font-medium rounded-3xl py-3 px-6 hover:bg-[#C7BDDD] hover:text-[#48376C]">
+      <a href={link} target="_blank"className="bg-[#48376C] text-white text-sm font-medium rounded-3xl py-3 px-6 hover:bg-[#C7BDDD] hover:text-[#48376C] text-center">
         View project
-      </button>
+      </a>
     </div>
   );
 }
