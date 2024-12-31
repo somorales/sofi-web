@@ -1,13 +1,18 @@
 import React, { useEffect, useContext, useState, useRef } from "react";
 import { NavContext } from "../context/nav.context";
 import CenteredContainer from "../components/CenteredContainer";
-import muquiStart from "../assets/images/muqui-start.png";
-import muquiOnboarding from "../assets/images/muqui-onboarding.png";
-import muquiLogo from "../assets/images/muqui-logo.png";
+import muquiStartImage from "../assets/images/muqui-start.png";
+import muquiOnboardingImage from "../assets/images/muqui-onboarding.png";
+import muquiLogoImage from "../assets/images/muqui-logo.png";
 import obsImage from "../assets/images/obs.png";
-import userPersona from "../assets/images/user-persona.png";
+import userPersonaImage from "../assets/images/user-persona.png";
 import divergenceImage from "../assets/images/divergence.png";
 import convergenceImage from "../assets/images/convergence.png";
+import solutionValidationImage from "../assets/images/solution-validation.png";
+import muquiFinalSolutionImage from "../assets/images/muqui-final-solution.png";
+import muquiWatermarkImage from "../assets/images/muqui-watermark.png";
+import muquiLowFidelityImage from "../assets/images/muqui-low-fidelity.png";
+import muquiHighFidelityImage from "../assets/images/muqui-high-fidelity.png";
 
 export default function MuquiProjectPage() {
   const { setBackgroundColor } = useContext(NavContext);
@@ -90,7 +95,7 @@ export default function MuquiProjectPage() {
             </div>
             <div className="md:col-span-2">
               <img
-                src={muquiStart}
+                src={muquiStartImage}
                 className="max-h-[700px]"
                 alt="Muqui Onboarding Screen"
               />
@@ -101,12 +106,12 @@ export default function MuquiProjectPage() {
       <div className="bg-[#F4F2F7]">
         <CenteredContainer>
           <img
-            src={muquiLogo}
+            src={muquiLogoImage}
             className="md:h-[155px] md:-mt-16"
             alt="Muqui Logo"
           />
           <img
-            src={muquiOnboarding}
+            src={muquiOnboardingImage}
             className="md:h-[700px] md:mt-10 md:mb-20"
             alt="Muqui Onboarding Screens"
           />
@@ -223,17 +228,17 @@ export default function MuquiProjectPage() {
             </p>
           </section>
 
-          <img src={userPersona} />
+          <img src={userPersonaImage} />
         </CenteredContainer>
       </div>
 
-      <div className="bg-[#F4F2F7] py-20">
+      <div className="bg-white py-20">
         <CenteredContainer>
           <section className="mb-16">
             <h2 className="text-3xl font-semibold text-[#48376C] mb-6">
               Ideation
             </h2>
-            <div className="relative md:h-[800px]" ref={containerRef}>
+            <div className="relative md:h-[660px]" ref={containerRef}>
               <div
                 className={`
                 absolute inset-0
@@ -254,6 +259,150 @@ export default function MuquiProjectPage() {
                 <img src={convergenceImage} alt="convergence image" />
               </div>
             </div>
+            <p className="mt-5">
+              <b>✧</b> We conducted a{" "}
+              <span className="text-[#48376C] font-semibold">divergence</span>{" "}
+              exercise for idea generation, and a{" "}
+              <span className="text-[#48376C] font-semibold">convergence</span>{" "}
+              exercise for decision-making.
+            </p>
+            <p className="mt-5">
+              <b>✧</b> With this exercise, we chose the most innovative and
+              feasible ideas and arrived at our initial solution.
+            </p>
+          </section>
+
+          <section className="mb-16">
+            <h2 className="text-3xl font-semibold text-[#48376C] mb-6">
+              Initial Solution
+            </h2>
+            <p className="text-[#48376C] text-lg font-semibold mb-6">
+              Collaborative management platform that uses a virtual pet to
+              promote teamwork. The team unites efforts to maintain the pet's
+              well-being, which promotes shared responsibility and reduces
+              collaboration-related stress.
+            </p>
+
+            <p className="text-black">
+              With this proposal, our objective was for students to establish a
+              special bond with their virtual pet while benefiting from a task
+              manager designed to alleviate the team's workload. Ensure the
+              virtual pet's well-being through students' commitment to its care.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-semibold text-[#48376C] mb-6">
+              Validation
+            </h2>
+            <p className="text-black mb-6">
+              In this stage we conducted 3 exercises, asking ourselves{" "}
+              <span className="italic font-extralight">
+                is this what students need?
+              </span>
+            </p>
+
+            <img src={solutionValidationImage} alt="solution validation" />
+
+            <p className="text-xl text-black mt-6">
+              This is how we arrived at our final solution, giving a twist to
+              our primary idea:
+            </p>
+          </section>
+        </CenteredContainer>
+      </div>
+
+      <div className="bg-[#F4F2F7] py-20">
+        <CenteredContainer>
+          <section className="mb-16">
+            <h2 className="text-4xl font-semibold text-[#48376C] mb-6">
+              Final solution
+            </h2>
+            <div className="md:grid md:grid-cols-2">
+              <p className="text-2xl text-[#48376C] mt-5 leading-loose">
+                Muqui is a dynamic and collaborative project management platform
+                that uses virtual pets and worlds to create a fun and friendly
+                experience. This solution aims to promote collective
+                responsibility and reduce the stress associated with
+                collaboration.
+              </p>
+              <img
+                src={muquiFinalSolutionImage}
+                className="px-5 -mt-20"
+                alt="Muqui Concept."
+              />
+            </div>
+          </section>
+        </CenteredContainer>
+      </div>
+
+      <div className="relative bg-[#EECFFF]">
+        <CenteredContainer className="md:h-[940px]">
+          <div className="absolute inset-0 flex items-center justify-center opacity-40">
+            <img
+              src={muquiWatermarkImage}
+              className="md:h-96"
+              alt="Muqui logo"
+            />
+          </div>
+
+          <div className="absolute inset-0 flex items-center justify-start py-16 px-28">
+            <h1 className="text-6xl font-bold text-purple-900">Prototype</h1>
+          </div>
+        </CenteredContainer>
+      </div>
+
+      <div className="bg-white py-20">
+        <CenteredContainer>
+          <section className="mb-16">
+            <h2 className="text-4xl font-semibold text-[#48376C] mb-6">
+              Low fidelity
+            </h2>
+            <p className="mb-5">
+              We conducted two low-fidelity prototype iterations with 5
+              participants in each iteration, after defining the user flow in
+              our application. The objective was to perform usability and
+              concept testing.
+            </p>
+            <p className="mb-10">
+              We created interactive prototypes for each user flow. During the
+              tests, participants performed various activities and exercises in
+              our prototype, providing us with initial feedback, identifying
+              blockers and improvement ideas that we implemented in the next
+              prototype phase.
+            </p>
+            <img
+              src={muquiLowFidelityImage}
+              className="mb-5"
+              alt="Muqui Low Fidelity"
+            />
+          </section>
+
+          <section className="mb-16">
+            <h2 className="text-4xl font-semibold text-[#48376C] mb-6">
+              High fidelity
+            </h2>
+            <p className="mb-5">
+              After completing the low-fidelity prototype, we moved on to
+              building the high-fidelity solution. The objective of this model
+              is to show the solution as close to reality as possible. We
+              started using pre-built UI elements and organically began creating
+              and adapting our own UI Kit in the prototype, which we will see
+              later.
+            </p>
+
+            <p className="mb-10">
+              The iterations consisted of a guerrilla-style test and a UX
+              writing design critique where in both cases we captured the
+              reactions, comments, and suggestions from the interviewees to
+              apply to our next prototyping stage, the final product.
+            </p>
+
+            <img
+              src={muquiHighFidelityImage}
+              className="mb-5"
+              alt="Muqui High Fidelity"
+            />
           </section>
         </CenteredContainer>
       </div>
