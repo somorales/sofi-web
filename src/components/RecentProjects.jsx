@@ -1,21 +1,23 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import coverMuqui from "../assets/images/muqui-high-fidelity.png";
+import coverProgif from "../assets/images/progif.png";
 
 export default function RecentProjects() {
   const projects = [
     {
-      image: "https://placehold.co/400x400?text=Image",
+      image: coverMuqui,
       title:
         "How can we help university students to have better collaborative work?",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Pharetra porttitor sapien eget magna arcu egestas pretium vitae in.",
+        "Muqui is a dynamic and collaborative project management platform that leverages virtual pets and worlds to create a fun and friendly experience. The solution aims to foster collective responsibility and reduce collaboration-related stress.",
       link: "/projects/muqui",
     },
     {
-      image: "https://placehold.co/400x400?text=Image",
+      image: coverProgif ,
       title: "How to make it easier to find the ideal gift?",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Pharetra porttitor sapien eget magna arcu egestas pretium vitae in.",
+        "ProGift effectively and meaningfully connects gifts with personal interests, transforming the art of gift-giving into a thoughtful, personalized experience.",
       link: "#",
     },
     {

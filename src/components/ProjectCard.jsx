@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function ProjectCard({ image, title, description, link }) {
   return (
-    <div className="bg-white rounded-lg p-6 mb-6 flex flex-col md:flex-row gap-6 items-center border border-opacity-40 border-[#2B2B2B]">
+    <div className="bg-white rounded-lg p-6 mb-6 flex flex-col md:flex-row gap-12 items-center border border-opacity-40 border-[#2B2B2B]">
       <div className="w-full md:w-1/3">
         <img src={image} alt={title} className="rounded-lg w-[400px] h-auto" />
       </div>
