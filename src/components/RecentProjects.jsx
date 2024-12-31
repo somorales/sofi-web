@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import coverMuqui from "../assets/images/muqui-high-fidelity.png";
-import coverProgif from "../assets/images/progif.png";
+import coverMuqui from "../assets/images/cover-muqui.png";
+import coverProgif from "../assets/images/cover-progift.png";
 import coverAo from "../assets/images/cover-AO.png";
 
 export default function RecentProjects() {
