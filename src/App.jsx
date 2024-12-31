@@ -8,11 +8,13 @@ import HomePage from "./pages/HomePage";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import MuquiProjectPage from "./pages/MuquiProjectPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
     <>
       <NavBar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
