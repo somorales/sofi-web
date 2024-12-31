@@ -13,6 +13,10 @@ import muquiFinalSolutionImage from "../assets/images/muqui-final-solution.png";
 import muquiWatermarkImage from "../assets/images/muqui-watermark.png";
 import muquiLowFidelityImage from "../assets/images/muqui-low-fidelity.png";
 import muquiHighFidelityImage from "../assets/images/muqui-high-fidelity.png";
+import muquiUIToolkitImage from "../assets/images/ui-toolkit.png";
+import muquiResult1Image from "../assets/images/muqui-result-1.png";
+import muquiResult2Image from "../assets/images/muqui-result-2.png";
+import muquiResult3Image from "../assets/images/muqui-result-3.png";
 
 export default function MuquiProjectPage() {
   const { setBackgroundColor } = useContext(NavContext);
@@ -403,6 +407,49 @@ export default function MuquiProjectPage() {
               className="mb-5"
               alt="Muqui High Fidelity"
             />
+          </section>
+
+          <section className="mb-16">
+            <h2 className="text-4xl font-semibold text-[#48376C] mb-6">
+              UI Toolkit
+            </h2>
+            <p className="mb-5">
+              In our project, we developed a style guide to ensure visual
+              consistency. We opted for organic shapes that convey adaptability,
+              unity, movement, globality, and reliability, avoiding the coldness
+              of rectangular forms. Regarding colors, we chose purple for its
+              association with fantasy and creativity, complemented by soft
+              tones that evoke sensitivity and empathy.
+            </p>
+            <p className="mb-10">
+              Following the atomic design methodology, we identified,
+              prioritized, and created atoms, molecules, and organisms elements.
+              This way, we created a guide of +50 scalable and reusable
+              component symbols.
+            </p>
+            <img src={muquiUIToolkitImage} alt="Muqui UI Toolkit" />
+          </section>
+        </CenteredContainer>
+      </div>
+
+      <div className="bg-[#F4F2F7] py-20">
+        <CenteredContainer>
+          <section className="mb-16">
+            <h2 className="text-4xl font-semibold text-[#48376C] mb-6">
+              Result
+            </h2>
+            <div className="text-2xl text-[#48376C] mb-10 flex gap-4">
+              <div>✧</div>
+              <p>
+                Muqui is a team project management tool that encourages
+                collaboration in a virtual environment. It facilitates task
+                management and promotes assertive communication between team
+                members.
+              </p>
+            </div>
+            <img src={muquiResult1Image} alt="Muqui Results" />
+            <img src={muquiResult2Image} alt="Muqui Results" />
+            <img src={muquiResult3Image} alt="Muqui Results" />
           </section>
         </CenteredContainer>
       </div>
