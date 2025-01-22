@@ -25,7 +25,7 @@ export default function NavBar() {
         <div className="max-w-6xl mx-auto flex justify-between items-center py-[2.125rem]">
           <Link to="/">
             <span className="sr-only">Sofi</span>
-            <img alt="" src={logo} className="h-11 w-auto" />
+            <img alt="" src={logo} className="h-8 xl:h-11 w-auto" />
           </Link>
           <div className="flex flex-row justify-between gap-8 text-xl">
             <Link

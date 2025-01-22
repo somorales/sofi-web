@@ -34,7 +34,7 @@ export default function RecentProjects() {
   return (
     <div id="projects" className="bg-[#F4F2F7]">
       <div className="max-w-6xl mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-[#48376C] mb-12">
+        <h1 className="text-3xl xl:text-4xl font-bold text-[#48376C] mb-12">
           Recent projects
         </h1>
         <div className="space-y-6">

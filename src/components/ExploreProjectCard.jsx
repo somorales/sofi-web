@@ -9,7 +9,7 @@ export default function ExploreProjectCard({
 }) {
   return (
     <div className="bg-white shadow-md rounded-lg p-6 flex flex-col">
-      <div className="bg-gray-200 w-[300px] h-[250px] rounded-lg mb-4">
+      <div className="bg-gray-200 w-[250px] h-[200px] sm:w-[300px] sm:h-[250px] rounded-lg mb-4 mx-auto">
         <img
           src={image}
           alt={title}
@@ -18,7 +18,7 @@ export default function ExploreProjectCard({
       </div>
       <h3 className="text-base font-semibold mb-2">{title}</h3>
       <p className="text-sm text-gray-600 mb-4 min-h-[80px]">{description}</p>
-      <div className="flex flex-wrap gap-2 mb-4">
+      <div className="hidden md:flex flex-wrap gap-2 mb-4">
         {tags.map((tag, index) => (
           <span
             key={index}
