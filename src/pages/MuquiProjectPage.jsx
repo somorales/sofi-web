@@ -15,8 +15,10 @@ import muquiLowFidelityImage from "../assets/images/muqui-low-fidelity.png";
 import muquiHighFidelityImage from "../assets/images/muqui-high-fidelity.png";
 import muquiUIToolkitImage from "../assets/images/ui-toolkit.png";
 import muquiResult1Image from "../assets/images/muqui-result-1.png";
-import muquiResult2Image from "../assets/images/muqui-result-2.png";
 import muquiResult3Image from "../assets/images/muqui-result-3.png";
+import muquiMundosImage from "../assets/images/muqui-mundos.png";
+import muquiTipsImage from "../assets/images/muqui-tips.png";
+import muquiNavegacionImage from "../assets/images/muqui-navegacion.png";
 
 export default function MuquiProjectPage() {
   const { setBackgroundColor } = useContext(NavContext);
@@ -448,8 +450,14 @@ export default function MuquiProjectPage() {
               </p>
             </div>
             <img src={muquiResult1Image} alt="Muqui Results" />
-            <img src={muquiResult2Image} alt="Muqui Results" />
+            <img src={muquiMundosImage} alt="Muqui Results" />
             <img src={muquiResult3Image} alt="Muqui Results" />
+            <img src={muquiTipsImage} className="mt-20" alt="Muqui Results" />
+            <img
+              src={muquiNavegacionImage}
+              className="mt-20"
+              alt="Muqui Results"
+            />
           </section>
         </CenteredContainer>
       </div>
