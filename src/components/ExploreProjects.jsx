@@ -4,9 +4,25 @@ import travelStories from "../assets/images/travel-store.png";
 import oscarWeb from "../assets/images/oscar-web.png";
 import lex from "../assets/images/lex.png";
 import quiz from "../assets/images/quiz.png";
+import ao from "../assets/images/cover-AO.png";
 
 export default function ExploreProjects() {
   const projects = [
+    {
+      title: "AOPY",
+      image: ao,
+      description:
+        "Inventory management for the Paraguayan store AO. Admin users can manage products. Users can search for products and favorite them.",
+      tags: [
+        "#React",
+        "#Tailwind",
+        "#Responsive",
+        "#Mongoose",
+        "#MongoDB",
+        "#Express",
+      ],
+      link: "https://ao-py.netlify.app/",
+    },
     {
       title: "TravelStories",
       image: travelStories,
@@ -15,10 +31,10 @@ export default function ExploreProjects() {
       tags: [
         "#Bootstrap",
         "#HTML5",
-        "#GitHub",
         "#CSS3",
         "#React",
         "#JavaScript",
+        "#Node.js",
       ],
       link: "https://travelstories-as.netlify.app/",
     },
@@ -30,8 +46,8 @@ export default function ExploreProjects() {
       tags: [
         "#UIDesign",
         "#Figma",
-        "#HTML5",
         "#Tailwind",
+        "#HTML5",
         "#React",
         "#JavaScript",
       ],
@@ -44,11 +60,11 @@ export default function ExploreProjects() {
         "‘What Would I Choose’ is a question game that challenges you to discover how you would react in fun and surprising situations. Play and put your self-knowledge to the test!",
       tags: [
         "#HTML5",
-        "#Tailwind",
         "#React",
         "#JavaScript",
         "#GitHub",
-        "Figma",
+        "#Tailwind",
+        "#Figma",
       ],
       link: "https://www.figma.com/proto/uueyZqvBLime7g6Yj93FPm/Lex?page-id=0%3A1&node-id=292-7595&viewport=78%2C835%2C0.02&t=3ECUOK7kg4NEkAx9-1&scaling=contain&content-scaling=fixed&starting-point-node-id=292%3A7595&show-proto-sidebar=1",
     },

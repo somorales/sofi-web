@@ -22,14 +22,14 @@ export default function RecentProjects() {
     //   link: "#",
     //   wip: true,
     // },
-    {
+    /* {
       image: coverAo,
       title: "AO product management portal",
       description:
         "Inventory management for the Paraguayan store AO. Admin users can manage products. Users can search for products and favorite them.",
       link: "#",
       wip: true,
-    },
+    },*/
   ];
   return (
     <div id="projects" className="bg-[#F4F2F7]">
