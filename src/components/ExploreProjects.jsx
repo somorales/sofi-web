@@ -42,7 +42,11 @@ export default function ExploreProjects() {
       description:
         "LEX is an application designed to help you create connections, feel part of the city, and enjoy places and events that match your interests.",
       tags: ["#UserFlow", "#Wiframes", "#Figma", "#Prototipy", "#User Persona"],
+<<<<<<< HEAD
       link: "https://www.figma.com/proto/uueyZqvBLime7g6Yj93FPm/Lex?page-id=0%3A1&node-id=292-7595&viewport=78%2C835%2C0.02&t=3ECUOK7kg4NEkAx9-1&scaling=contain&content-scaling=fixed&starting-point-node-id=292%3A7595&show-proto-sidebar=1",
+=======
+      link: "https://www.figma.com/proto/uueyZqvBLime7g6Yj93FPm/Lex?page-id=0%3A1&node-id=98-4430&starting-point-node-id=98%3A4430&scaling=scale-down-width&content-scaling=fixed&t=Oxdz5EhkSkeFPgzU-1",
+>>>>>>> b2b3a84 (new project)
     },
   ];
 
