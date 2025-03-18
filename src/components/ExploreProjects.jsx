@@ -3,6 +3,7 @@ import ExploreProjectCard from "./ExploreProjectCard";
 import travelStories from "../assets/images/travel-store.png";
 import oscarWeb from "../assets/images/oscar-web.png";
 import lex from "../assets/images/lex.png";
+import quiz from "../assets/images/quiz.png";
 
 export default function ExploreProjects() {
   const projects = [
@@ -12,7 +13,7 @@ export default function ExploreProjects() {
       description:
         "TravelStories is an application that allows users to share their travel experiences through stories and narratives. ",
       tags: [
-        "#UIDesign",
+        "#Bootstrap",
         "#HTML5",
         "#GitHub",
         "#CSS3",
@@ -37,16 +38,28 @@ export default function ExploreProjects() {
       link: "https://oscar-web.netlify.app/",
     },
     {
+      title: " What would I choose?",
+      image: quiz,
+      description:
+        "‘What Would I Choose’ is a question game that challenges you to discover how you would react in fun and surprising situations. Play and put your self-knowledge to the test!",
+      tags: [
+        "#HTML5",
+        "#Tailwind",
+        "#React",
+        "#JavaScript",
+        "#GitHub",
+        "Figma",
+      ],
+      link: "https://www.figma.com/proto/uueyZqvBLime7g6Yj93FPm/Lex?page-id=0%3A1&node-id=292-7595&viewport=78%2C835%2C0.02&t=3ECUOK7kg4NEkAx9-1&scaling=contain&content-scaling=fixed&starting-point-node-id=292%3A7595&show-proto-sidebar=1",
+    },
+
+    {
       title: "Lex",
       image: lex,
       description:
         "LEX is an application designed to help you create connections, feel part of the city, and enjoy places and events that match your interests.",
       tags: ["#UserFlow", "#Wiframes", "#Figma", "#Prototipy", "#User Persona"],
-<<<<<<< HEAD
-      link: "https://www.figma.com/proto/uueyZqvBLime7g6Yj93FPm/Lex?page-id=0%3A1&node-id=292-7595&viewport=78%2C835%2C0.02&t=3ECUOK7kg4NEkAx9-1&scaling=contain&content-scaling=fixed&starting-point-node-id=292%3A7595&show-proto-sidebar=1",
-=======
-      link: "https://www.figma.com/proto/uueyZqvBLime7g6Yj93FPm/Lex?page-id=0%3A1&node-id=98-4430&starting-point-node-id=98%3A4430&scaling=scale-down-width&content-scaling=fixed&t=Oxdz5EhkSkeFPgzU-1",
->>>>>>> b2b3a84 (new project)
+      link: "https://www.figma.com/proto/uueyZqvBLime7g6Yj93FPm/Lex?page-id=0%3A1&node-id=101-4380&starting-point-node-id=98%3A4430&scaling=scale-down-width&content-scaling=fixed&t=Oxdz5EhkSkeFPgzU-1",
     },
   ];
 
