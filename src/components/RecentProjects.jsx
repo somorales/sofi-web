@@ -11,8 +11,7 @@ export default function RecentProjects() {
         "Optimize your language learning in an intuitive and personalized way",
       description:
         "Lexi is an innovative language learning app that offers personalized, intuitive tools and an interactive dictionary experience, designed to optimize your learning process and adapt to your  needs",
-      link: "#",
-      wip: true,
+      link: "/projects/lexi",
     },
     {
       image: coverMuqui,
@@ -22,14 +21,6 @@ export default function RecentProjects() {
         "Muqui is a dynamic and collaborative project management platform that leverages virtual pets and worlds to create a fun and friendly experience. The solution aims to foster collective responsibility and reduce collaboration-related stress.",
       link: "/projects/muqui",
     },
-    /* {
-      image: coverAo,
-      title: "AO product management portal",
-      description:
-        "Inventory management for the Paraguayan store AO. Admin users can manage products. Users can search for products and favorite them.",
-      link: "#",
-      wip: true,
-    },*/
   ];
   return (
     <div id="projects" className="bg-[#F4F2F7]">

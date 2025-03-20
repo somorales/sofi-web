@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import MuquiProjectPage from "./pages/MuquiProjectPage";
+import LexiProjectPage from "./pages/LexiProjectPage";
 import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/projects/muqui" element={<MuquiProjectPage />} />
+        <Route path="/projects/lexi" element={<LexiProjectPage />} />
       </Routes>
       <Footer />
     </>
