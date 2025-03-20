@@ -1,11 +1,19 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import coverMuqui from "../assets/images/cover-muqui.png";
-import coverProgif from "../assets/images/cover-progift.png";
-import coverAo from "../assets/images/cover-AO.png";
+import coverLexi from "../assets/images/cover-lexi.png";
 
 export default function RecentProjects() {
   const projects = [
+    {
+      image: coverLexi,
+      title:
+        "Optimize your language learning in an intuitive and personalized way",
+      description:
+        "Lexi is an innovative language learning app that offers personalized, intuitive tools and an interactive dictionary experience, designed to optimize your learning process and adapt to your  needs",
+      link: "#",
+      wip: true,
+    },
     {
       image: coverMuqui,
       title:
@@ -14,14 +22,6 @@ export default function RecentProjects() {
         "Muqui is a dynamic and collaborative project management platform that leverages virtual pets and worlds to create a fun and friendly experience. The solution aims to foster collective responsibility and reduce collaboration-related stress.",
       link: "/projects/muqui",
     },
-    // {
-    //   image: coverProgif,
-    //   title: "How to make it easier to find the ideal gift?",
-    //   description:
-    //     "ProGift effectively and meaningfully connects gifts with personal interests, transforming the art of gift-giving into a thoughtful, personalized experience.",
-    //   link: "#",
-    //   wip: true,
-    // },
     /* {
       image: coverAo,
       title: "AO product management portal",

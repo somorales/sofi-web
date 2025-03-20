@@ -22,6 +22,7 @@ export default function ExploreProjects() {
         "#Express",
       ],
       link: "https://ao-py.netlify.app/",
+      git: "https://github.com/somorales/ao-frontend",
     },
     {
       title: "TravelStories",
@@ -37,6 +38,7 @@ export default function ExploreProjects() {
         "#Node.js",
       ],
       link: "https://travelstories-as.netlify.app/",
+      git: "https://github.com/somorales/Viajes",
     },
     {
       title: "Oscar's Website",
@@ -52,6 +54,7 @@ export default function ExploreProjects() {
         "#JavaScript",
       ],
       link: "https://oscar-web.netlify.app/",
+      git: "https://github.com/somorales/oscar-web",
     },
     {
       title: " What would I choose?",
@@ -66,7 +69,8 @@ export default function ExploreProjects() {
         "#Tailwind",
         "#Figma",
       ],
-      link: "https://www.figma.com/proto/uueyZqvBLime7g6Yj93FPm/Lex?page-id=0%3A1&node-id=292-7595&viewport=78%2C835%2C0.02&t=3ECUOK7kg4NEkAx9-1&scaling=contain&content-scaling=fixed&starting-point-node-id=292%3A7595&show-proto-sidebar=1",
+      link: "https://what-woud-i-choose.netlify.app/",
+      git: "https://github.com/somorales/quiz",
     },
 
     {
@@ -94,6 +98,7 @@ export default function ExploreProjects() {
               description={project.description}
               tags={project.tags}
               link={project.link}
+              git={project.git}
             />
           ))}
         </div>

@@ -19,7 +19,7 @@ export default function HomePage() {
             <h1 className="text-[#1a2e35] text-4xl md:text-5xl font-semibold mb-6 leading-tight ">
               Hi, I'm Sofia Morales,{" "}
               <span className="font-extrabold">
-                UX/UI designer & Web developer{" "}
+                Web developer & UX/UI designer{" "}
               </span>
               ✧ Crafting simple and innovative user experiences. ✧ Making
               people's lives a little simpler through design ✧₊˚

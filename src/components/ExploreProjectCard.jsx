@@ -6,6 +6,7 @@ export default function ExploreProjectCard({
   description,
   tags,
   link,
+  git,
 }) {
   return (
     <div className="bg-white shadow-md rounded-lg p-6 flex flex-col">
@@ -31,10 +32,19 @@ export default function ExploreProjectCard({
       <a
         href={link}
         target="_blank"
-        className="bg-[#48376C] text-white text-sm font-medium rounded-3xl py-3 px-6 hover:bg-[#C7BDDD] hover:text-[#48376C] text-center"
+        className="bg-[#48376C] text-white text-sm font-medium rounded-3xl py-3 px-6 hover:bg-[#C7BDDD] hover:text-[#48376C] text-center mb-2"
       >
         View project
       </a>
+      {git != undefined && (
+        <a
+          href={git}
+          target="_blank"
+          className="bg-withe  text-[#48376C] text-sm font-medium rounded-3xl py-3 px-6 hover:bg-[#C7BDDD] hover:text-[#48376C] text-center"
+        >
+          Source code
+        </a>
+      )}
     </div>
   );
 }
