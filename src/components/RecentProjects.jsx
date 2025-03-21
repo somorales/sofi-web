@@ -10,7 +10,7 @@ export default function RecentProjects() {
       title:
         "Optimize your language learning in an intuitive and personalized way",
       description:
-        "Lexi is an innovative language learning app that offers personalized, intuitive tools and an interactive dictionary experience, designed to optimize your learning process and adapt to your  needs",
+        "Lexi is an innovative language learning app that offers personalized, intuitive tools and an interactive dictionary experience, designed to optimize your learning process and adapt to your  needs.",
       link: "/projects/lexi",
     },
     {
@@ -26,7 +26,7 @@ export default function RecentProjects() {
     <div id="projects" className="bg-[#F4F2F7]">
       <div className="max-w-6xl mx-auto px-4 py-16">
         <h1 className="text-3xl xl:text-4xl font-bold text-[#48376C] mb-12">
-          Recent projects
+          Projects
         </h1>
         <div className="space-y-6">
           {projects.map((project, index) => (

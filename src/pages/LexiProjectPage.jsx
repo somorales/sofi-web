@@ -55,7 +55,7 @@ export default function LexiProjectPage() {
                 <h2 className="text-2xl font-bold text-[#4D3E7F] w-48">
                   Timeline
                 </h2>
-                <p className="text-lg text-black pt-1">Two weeks</p>
+                <p className="text-lg text-black pt-1">Four weeks</p>
               </div>
 
               <div className="flex items-start mt-8">
