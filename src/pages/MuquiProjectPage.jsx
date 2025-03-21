@@ -506,7 +506,7 @@ export default function MuquiProjectPage() {
             <a
               href="https://www.figma.com/proto/dGEF3AN5bjsPHDwDQPdtGz/Muqui---Espacio-de-trabajo?page-id=2078%3A73534&node-id=2103-100667&p=f&viewport=-1102%2C-1378%2C0.09&t=GO7yZ2BkeGgYQzoP-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2103%3A100535&show-proto-sidebar=1"
               target="_blank"
-              className="bg-[#48376C] text-white text-sm font-medium rounded-3xl py-3 px-32 border border-[#48376C] hover:bg-[#EECFFF] hover:text-[#48376C] text-center"
+              className="bg-[#48376C] text-white text-sm font-medium rounded-3xl py-3 px-32  hover:bg-[#EECFFF] hover:text-[#48376C] text-center"
             >
               View prototype
             </a>
