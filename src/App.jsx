@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import MuquiProjectPage from "./pages/MuquiProjectPage";
 import LexiProjectPage from "./pages/LexiProjectPage";
 import ScrollToTop from "./components/ScrollToTop";
+import QuickbiteProjectPage from "./pages/QuickbiteProjectPage";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/projects/muqui" element={<MuquiProjectPage />} />
         <Route path="/projects/lexi" element={<LexiProjectPage />} />
+        <Route path="/projects/quickbite" element={<QuickbiteProjectPage />} />
       </Routes>
       <Footer />
     </>

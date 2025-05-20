@@ -2,9 +2,18 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import coverMuqui from "../assets/images/cover-muqui.png";
 import coverLexi from "../assets/images/cover-lexi.png";
+import coverQuickbite from "../assets/images/cover-quickbite.png";
 
 export default function RecentProjects() {
   const projects = [
+    {
+      image: coverQuickbite,
+      title:
+        "Turn your favorite recipes into clear, actionable steps for every meal.",
+      description:
+        "Quickbite is a smart cooking app that turns your favorite recipes into fast, organized shopping lists—making cooking easier from the very first step. Save time, stay organized, and enjoy stress-free meals.",
+      link: "/projects/quickbite",
+    },
     {
       image: coverLexi,
       title:
