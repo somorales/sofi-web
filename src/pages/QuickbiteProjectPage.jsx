@@ -72,7 +72,7 @@ export default function QuickbiteProjectPage() {
                   Tools
                 </h2>
                 <p className="text-lg text-black pt-1">
-                  HTML5 ✧ React ✧ JavaScript ✧ Tailwind ✧ OpenAi ✧ GitHub
+                  HTML5 ✧ React ✧ JavaScript ✧ Tailwind ✧ OpenAI ✧ GitHub
                 </p>
               </div>
 
